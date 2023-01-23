@@ -137,7 +137,7 @@ public class LoginPage{
         jf.setLayout(null);
      
                   initComponents();
-                  Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name", "root","12346789");
+                  Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name", "root","");
                    jbtnforsignup.addActionListener(new ActionListener(){
                         public void actionPerformed(ActionEvent e){
                             String user = text_Username.getText();
