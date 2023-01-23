@@ -175,7 +175,7 @@ public class jb
                    String userName = jtf_forusername.getText(); 
                    String password = jtf_1forpassword.getText(); 
                    try { 
-               Connection connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name","root", "12346789"); 
+               Connection connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name","root", ""); 
  
                 PreparedStatement st = (PreparedStatement) connection.prepareStatement("Select * from customer where name=? and password = ?"); 
                 //PreparedStatement st1 = (PreparedStatement) connection.prepareStatement("Select * from customer where password=?");
@@ -310,7 +310,7 @@ jbforlogout.setVisible(false);
                 try {
                     
                    
-                    Connection connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name","root", "12346789");
+                    Connection connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name","root", "");
                    
                     
                     PreparedStatement pst=connection.prepareStatement("Update customer set password=? where name =?");
