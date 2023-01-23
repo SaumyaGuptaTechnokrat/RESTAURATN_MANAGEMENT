@@ -144,7 +144,7 @@ public class LoginPage{
                             String email = jtf_forsignupemailid.getText();
                             try{
                                 String query ="Update customer set name = '"+text_Username.getText()+"' , confirm_name = '"+text_cnfrmname.getText()+"',email= '"+jtf_forsignupemailid.getText()+"',address= '"+jtf_forAddress.getText()+"',mobile= '"+jtf_formobile.getText()+"' where name = '"+jtf_formobile.getText()+"'";
-                                Connection connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name","root", "12346789");
+                                Connection connection = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name","root", "");
                                 PreparedStatement st = (PreparedStatement) connection.prepareStatement(query);
                                 st.execute();
                             }
