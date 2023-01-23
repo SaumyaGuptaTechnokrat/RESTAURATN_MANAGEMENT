@@ -230,7 +230,7 @@ public class SignUP {
      {
         Connection conn=null;
        try {
-       conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name", "root","12346789");
+       conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name", "root","");
            
         
            
